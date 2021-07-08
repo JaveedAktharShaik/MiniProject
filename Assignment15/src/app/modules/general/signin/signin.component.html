@@ -1,0 +1,40 @@
+<h2>Reactvie Forms</h2>
+<hr>
+<div class="container">
+    <form [formGroup]='productForm' (ngSubmit)='submitData()'>
+        <div class='form-group'>
+            <label>Product Name</label>
+            <input type='text' formControlName='productName' class='form-control'>
+        </div>
+        <div formGroupName="address">
+            <div class='form-group'>
+                <label for="city">City</label>
+                <input id="city" type='text' formControlName='city' class='form-control'>
+            </div>
+            <div class='form-group'>
+                <label for="postal">Postal Code</label>
+                <input id="postal" type='text' formControlName='postal' class='form-control'>
+            </div>
+        </div>
+
+        <div *ngIf="productForm.get('productName')?.invalid && productForm.get('productName')?.touched">
+            <div *ngIf="productForm.get('productName')?.errors?.required" class='text text-danger'>ProductName is
+                required</div>
+            <div *ngIf="productForm.get('productName')?.errors?.pattern" class='text text-danger'>Invalid Product Name
+                (It must be b/w 5 to 15) </div>
+        </div>
+        <div *ngIf="productForm.get('address.city')?.invalid && productForm.get('address.city')?.touched">
+            <div *ngIf="productForm.get('address.city')?.errors?.required" class='text text-danger'>City is
+                required</div>
+            <div *ngIf="productForm.get('address.city')?.errors?.pattern" class='text text-danger'>Invalid Product Name
+                (It must be b/w 0 to 15) </div>
+        </div>
+        <div *ngIf="productForm.get('address.postal')?.invalid && productForm.get('address.postal')?.touched">
+            <div *ngIf="productForm.get('address.postal')?.errors?.required" class='text text-danger'>Postal Code is
+                required</div>
+            <div *ngIf="productForm.get('address.postal')?.errors?.pattern" class='text text-danger'>Invalid Postal Code
+                (It must be b/w 0 to 15) </div>
+        </div>
+        <button [disabled]='!productForm.valid' type='submit' class='btn btn-success'>Submit</button>
+    </form>
+</div>

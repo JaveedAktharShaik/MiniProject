@@ -1,0 +1,6 @@
+[
+{"courseId":105, "courseName":"Java","coursePrice":4000,"courseDescrption":"Java training for 130 days","CourseImg":"assets/Images/java.jpg"},
+{"courseId":106, "courseName":"Python","coursePrice":5000,"courseDescrption":"Python training for 120 days","CourseImg":"assets/Images/python.jpg"},
+{"courseId":107, "courseName":"Java Script","coursePrice":6000,"courseDescrption":"Java Script training for 100 days","CourseImg":"assets/Images/javascript.jpg"},
+{"courseId":108, "courseName":"Dbms","coursePrice":7000,"courseDescrption":"Dbms for 150 days","CourseImg":"assets/Images/dbms.jpg"}
+]

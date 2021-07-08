@@ -1,0 +1,6 @@
+[
+    {"courseId":101, "courseName":"java","coursePrice":5000,"courseDescrption":"java training for 120 days","CourseImg":"assets/Images/java.jpg"},
+    {"courseId":102, "courseName":"Jdbc","coursePrice":6000,"courseDescrption":"Jdbc training for 75 days","CourseImg":"assets/Images/dbc.jpg"},
+    {"courseId":103, "courseName":"Java Springboot","coursePrice":7000,"courseDescrption":"JavaSpringboot training for 85 days","CourseImg":"assets/Images/springboot.jpg"},
+    {"courseId":104, "courseName":"multithreading","coursePrice":8000,"courseDescrption":"multithreading training for 90 days","CourseImg":"assets/Images/multithreading.jpg"}
+]

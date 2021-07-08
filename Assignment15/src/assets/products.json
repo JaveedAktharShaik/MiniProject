@@ -1,0 +1,7 @@
+[
+    {"productId":1, "productName":"Shirts","productPrice":102,"productDes":"the product is shirts","productImg":"assets/Images/shirts.jpg"},
+    {"productId":2, "productName":"T-Shirts","productPrice":100,"productDes":"the product is T-shirts","productImg":"assets/Images/tshirts.jpg"},
+    {"productId":3, "productName":"Phants","productPrice":1000,"productDes":"the product is Phants","productImg":"assets/Images/phants.jpg"},
+    {"productId":4, "productName":"shorts","productPrice":10,"productDes":"the product is shorts","productImg":"assets/Images/shorts.jpg"}
+    
+]
